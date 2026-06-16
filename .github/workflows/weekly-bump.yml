@@ -1,0 +1,29 @@
+name: Weekly bump
+
+on:
+  schedule:
+    - cron: '27 14 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  bump:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Update Last updated line
+        run: |
+          MONTH=$(date -u +%Y-%m)
+          sed -i -E "s/Last updated: [0-9]{4}-[0-9]{2}/Last updated: ${MONTH}/" README.md
+          sed -i -E "s/Last updated: [0-9]{4}-[0-9]{2}/Last updated: ${MONTH}/" docs/index.html || true
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if ! git diff --quiet; then
+            git add README.md docs/index.html
+            git commit -m "Weekly bump: ${{ github.run_number }}"
+            git push
+          fi
