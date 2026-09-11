@@ -68,6 +68,7 @@ Truly free as in freedom — no account, no tracking, source on GitHub.
 - [Olive](https://olivevideoeditor.org) — GPLv3, modern C++ rewrite in progress.
 - [Avidemux](https://avidemux.sourceforge.net) — GPLv2, utility-grade.
 - [FFmpeg](https://ffmpeg.org) — LGPL/GPL CLI. Not an editor in the timeline sense, but every editor on this list relies on it. Worth learning if you cut a lot of identical clips.
+- [OrkasVideoStudio](https://github.com/Orkas-AI/Orkas-VideoStudio) — MIT, local-first TypeScript CLI and MCP video editor with editable plan.json timelines. Composition and editing need no paid keys; optional generation uses paid providers. Install from source.
 
 ## Mobile free editors
 
