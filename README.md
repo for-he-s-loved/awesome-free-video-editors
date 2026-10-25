@@ -83,6 +83,7 @@ If you just want to open a tab and cut a clip.
 - [Cutflux](https://cutflux.app) — Core editor opens without an account.
 - [Online Video Cutter (123apps)](https://online-video-cutter.com) — Trim/crop only, no login.
 - [Clideo](https://clideo.com) — Watermarks free exports and asks for signup before export.
+- [Text Match Cut](https://textmatchcut.net/) — Free browser tool for text match cut edits (one locked word across fast cuts); no login, exports MP4/WebM up to 1080p.
 
 ## Comparison table
 
