@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://for-he-s-loved.github.io/awesome-free-video-editors/sitemap.xml
